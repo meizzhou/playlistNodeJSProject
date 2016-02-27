@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1 id="name">OH MY GOSH</h1>
+<% if (artist.length) { %>
+  <ul>
+    <% artist.forEach(function(artist){ %>
+      <li><%= artist %></li>
+       <% array[artist].forEach(function(array){ %>
+       <li>https://www.youtube.com/watch?v=<%= array %></li>
+       <% }) %>
+    <% }) %>
+  </ul>
+<% } %>
+<p></p>
+</body>
+</html>
