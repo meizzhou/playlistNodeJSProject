@@ -1,6 +1,8 @@
+
 var http = require("http");
 var fs = require("fs");
 var YouTube = require('youtube-node');
+var request = require('ajax-request');
 
 var youTube = new YouTube();
 
@@ -62,16 +64,48 @@ for (var k = 0; k < artist.length; k++) {
     })(k);
 }
 
-
-
-
+// ajax post
+/*
+var params = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}'; 
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+var ajax = new XMLHttpRequest();
+ajax.open("POST", "localhost:8080", true);
+ajax.send(params); */
+/*
+request.post({
+  url: 'localhost:8080',
+  data: {"firstName":"John"},
+  headers: {}
+});
+*/
 var express = require('express');
 var app = express();
 app.set('view engine', 'ejs');
 
+app.use(express.static('public'));
+
 app.get('/', function(req, res) {
     res.render('index', {
-        array: array,
+        array: array[artist[0]],
+        artist: artist
+    });
+    
+})
+
+app.get('/process_get', function (req, res) {
+
+   // Prepare output in JSON format
+   // response = {
+   //     value:req.query.artist
+   // };
+   // console.log(response);
+   // res.end(JSON.stringify(response));
+   value:req.query.artist
+   res.render('index', {
+        array: array[req.query.artist],
         artist: artist
     });
 })
