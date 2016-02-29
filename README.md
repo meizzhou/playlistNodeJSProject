@@ -10,23 +10,6 @@ Basic features:
 Eg : List : [Elton John, Stevie Wonder, Frank Sinatra, Louis Armstrong];
 - By default the first item in the dropdown should be selected and the corresponding playlist should be rendered server side. Change in selection should trigger client side updates.
 
-Structure:
-----------
-├── server.js
-├── package.json
-├── Views
-│   ├── index.ejs
-│   ├── styles
-│   │   ├── style.css
-│   │   ├── extra.js
-├── Node modules
-│   ├── express
-│   ├── youtube-api
-│   ├── youtube-node
-│   ├── jqeury
-│   ├── ejs
-│   ├── bootstrap
-
 How to run the application:
 ---------------------------
 open terminal
