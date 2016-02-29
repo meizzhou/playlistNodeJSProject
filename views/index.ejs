@@ -29,8 +29,8 @@
 			<input class="span2" id="search_type" name="artist" type="hidden">
 			
 		  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" onchange="this.form.submit()">
-		  	<% var name = artist_single.replace(/%20/g, " ") %>
-		    <%= name %>
+		  	
+		    <%= artist_single %>
 		    <span class="caret"></span>
 		  </button>
 
@@ -38,8 +38,8 @@
 		    <% if (artist.length) { %>
 
 			    <% artist.forEach(function(artist){ %>
-			    	<% var string = artist.replace(/%20/g, " ") %>
-				    <li onclick="$('#search_type').val('<%= artist %>'); $('#searchForm').submit()"><%= string %></li>
+			    	
+				    <li onclick="$('#search_type').val('<%= artist %>'); $('#searchForm').submit()"><%= artist %></li>
 				    <% }) %>
 	    	<% } %>
 		  </ul>

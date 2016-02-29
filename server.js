@@ -10,7 +10,7 @@ youTube.setKey('AIzaSyABsq74cT6t68m7s29N7BRJhuq6aT7ZQRQ');
 youTube.addParam('type','playlist');
 
 //the artist that contains a list of singers
-var artist = ["Justin%20Bieber", "Beyonce", "Taylor%20Swift"];
+var artist = ["Justin Bieber", "Beyonce", "Taylor Swift", "Guns And Roses"];
 
 //the list that contains key-value pair which is {artist name: playlist ID}
 var array = {};
