@@ -12,6 +12,9 @@ Eg : List : [Elton John, Stevie Wonder, Frank Sinatra, Louis Armstrong];
 
 How to run the application:
 ---------------------------
+If you have not installed node.js
+please go to https://nodejs.org/en/download/ and download
+
 open terminal
 type the following commend:
 
