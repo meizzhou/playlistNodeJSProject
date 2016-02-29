@@ -14,8 +14,11 @@ How to run the application:
 ---------------------------
 open terminal
 type the following commend:
-cd -the directory you stored the project-
+
+cd <-the directory you stored the project->
+
 cd playlistNodeJSProject
+
 node server.js
 
 open your favorite browser and enter: 127.0.0.1:8080
